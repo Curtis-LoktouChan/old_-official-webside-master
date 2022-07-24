@@ -1,0 +1,30 @@
+.courseDisplayContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.625rem;
+}
+.courseDisplayTitleLine {
+    height: auto;
+    width: 70%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.625rem;
+}
+.courseDisplayTitleLine > .title {
+    font-size: 1.5rem;
+    color: royalblue;
+}
+@media all and (min-width: 700px) {
+    .courseDisplayContent {
+        height: 90vh;
+        width: 70%;
+    }
+    .courseDisplayContent > iframe {
+        height: 100%;
+        width: 100%;
+    }
+}

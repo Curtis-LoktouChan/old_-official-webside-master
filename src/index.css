@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: "思源黑体" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+a:link {
+  color: #1692f6;
+} /* 未访问链接*/
+a:hover {
+  color: #0808f6;
+}
+a:visited {
+  color: #0808f6;
+} /* 已访问链接 */

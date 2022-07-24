@@ -1,0 +1,112 @@
+.introductionContainer {
+    margin: 25px;
+}
+.introductionContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.introductionTitle {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.introductionTitle>span:nth-child(1) {
+    vertical-align: middle;
+    transform: scale(1.5);
+}
+.introductionTitle>span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+}
+.introductionContext {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.introductionContextText {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+}
+.introductionContextText>button {
+    align-self: flex-start;
+}
+.introductionContextText>p {
+    font-size: 14px;
+    text-align: justify;
+    vertical-align: text-bottom;
+    color: #333;
+}
+
+@media all and (min-width: 700px) {
+    .introductionContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .introductionContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .introductionTitle {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .introductionTitle>span:nth-child(1) {
+        vertical-align: middle;
+        transform: scale(2);
+    }
+    .introductionTitle>span:nth-child(2) {
+        vertical-align: middle;
+        font-size: 36px;
+        color: #333;
+        padding-left: 15px;
+    }
+    .introductionContext {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .introductionContextImgLeft {
+        width: 350px;
+    }
+    .introductionContextImgLeft img {
+        width: 350px;
+    }
+    .introductionContextText {
+        padding: 0 0 0 20px;
+    }
+    
+}
+@media all and (min-width: 1000px) {
+    .introductionContextImgLeft {
+        width: 400px;
+    }
+    .introductionContextImgLeft img {
+        width: 400px;
+    }
+    .introductionContextText {
+        padding: 0 0 0 50px;
+    }
+}
+@media all and (min-width: 1600px) {
+    .introductionContextImgLeft {
+        width: 500px;
+    }
+    .introductionContextImgLeft img {
+        width: 500px;
+    }
+    .introductionContextText {
+        padding: 0 0 0 100px;
+    }
+}

@@ -1,0 +1,110 @@
+.customerWorkContainer {
+    margin: 25px;
+}
+.customerWorkContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.customerWorkTitle {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.customerWorkTitle>span:nth-child(1) {
+    vertical-align: middle;
+    transform: scale(1.5);
+}
+.customerWorkTitle>span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+}
+.customerWorkContext {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.customerWorkContext>.customerWorkCard {
+    width: 140px;
+    text-align: center;
+}
+.customerWorkContext>div {
+    margin: 5px 0;
+}
+.customerWorkContainer>div>button {
+    align-self: flex-end;
+}
+.customerWorkUploadButton {
+    display: none;
+}
+.noWork {
+    font-size: large;
+    color: rgb(238, 116, 116);
+}
+.cardButtonsContainer>button {
+    margin: 3px;
+}
+@media all and (min-width: 700px) {
+    .customerWorkContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .customerWorkContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .customerWorkTitle {
+        text-align: center;
+        margin: 50px 0 30px 0;
+    }
+    .customerWorkTitle>span:nth-child(1) {
+        vertical-align: middle;
+        transform: scale(2);
+    }
+    .customerWorkTitle>span:nth-child(2) {
+        vertical-align: middle;
+        font-size: 36px;
+        color: #333;
+        padding-left: 15px;
+    }
+    .customerWorkContext {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .customerWorkContext>.customerWorkCard {
+        width: 350px;
+        height: 350px;
+    }
+    .customerWorkContext>.customerWorkCard>div:last-child {
+        padding: 20px;
+    }
+    .customerWorkPageControl {
+        margin: 25px;
+        align-self: center;
+        padding: 10px;
+        border: 1px dashed #1890ff;
+    }
+    .customerWorkContainer>div>.customerWorkUploadButton {
+        align-self: flex-start;
+    }
+    .customerWorkContainer>div>button {
+        align-self: flex-end;
+        margin: 20px 0;
+    }
+    .customerWorkUploadButton {
+        display: block;
+    }
+}

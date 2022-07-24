@@ -1,0 +1,106 @@
+.softDownloadContainer {
+    margin: 25px;
+}
+.softDownloadContext {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.softDownloadContextText {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+.softDownloadTitle {
+    font-size: 18px;
+    padding: 5px;
+}
+.softDownloadContextText>button {
+    margin: 5px;
+}
+
+@media all and (min-width: 700px) {
+    .softDownloadContainer {
+        width: 100%;
+        margin: 100px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .softDownloadContext {
+        width: 68.75%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .softDownloadContextImgLeft {
+        width: 350px;
+    }
+    .softDownloadContextImgLeft img {
+        width: 350px;
+    }
+    .softDownloadContextText {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 0 0 10px;
+    }
+    .softDownloadTitle {
+        padding: 0 0 5px 0;
+        font-size: 36px;
+        color: #333;
+    }
+    .softDownloadContextText>button {
+        align-self: flex-end;
+        margin: 5px 5px 0 0;
+    }
+}
+@media all and (min-width: 800px) {
+    .softDownloadContextImgLeft {
+        width: 350px;
+    }
+    .softDownloadContextImgLeft img {
+        width: 350px;
+    }
+    .softDownloadContextText {
+        padding: 0 0 0 20px;
+    }
+}
+@media all and (min-width: 1000px) {
+    .softDownloadContextImgLeft {
+        width: 450px;
+    }
+    .softDownloadContextImgLeft img {
+        width: 450px;
+    }
+    .softDownloadContextText {
+        padding: 0 0 0 50px;
+    }
+}
+@media all and (min-width: 1100px) {
+    .softDownloadContextImgLeft {
+        width: 500px;
+    }
+    .softDownloadContextImgLeft img {
+        width: 500px;
+    }
+    .softDownloadContextText {
+        padding: 0 0 0 70px;
+    }
+}
+@media all and (min-width: 1300px) {
+    .softDownloadContextImgLeft {
+        width: 600px;
+    }
+    .softDownloadContextImgLeft img {
+        width: 600px;
+    }
+    .softDownloadContextText {
+        padding: 0 0 0 100px;
+    }
+}

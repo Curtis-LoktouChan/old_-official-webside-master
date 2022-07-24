@@ -1,0 +1,227 @@
+.raspberryContainer {
+    margin: 25px;
+}
+.raspberryContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.raspberryTitle {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.raspberryTitle>span:nth-child(1) {
+    vertical-align: middle;
+    transform: scale(1.5);
+}
+.raspberryTitle>span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+}
+.raspberryContext {
+    align-self: stretch;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.raspberryContextText {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+}
+.raspberryContextText>button {
+    align-self: flex-start;
+}
+.raspberryContextText>p {
+    font-size: 14px;
+    text-align: justify;
+    vertical-align: text-bottom;
+    color: #333;
+}
+
+@media all and (min-width: 700px) {
+    .raspberryContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .raspberryContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .raspberryTitle {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .raspberryTitle>span:nth-child(1) {
+        vertical-align: middle;
+        transform: scale(2);
+    }
+    .raspberryTitle>span:nth-child(2) {
+        vertical-align: middle;
+        font-size: 36px;
+        color: #333;
+        padding-left: 15px;
+    }
+    .raspberryContext {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .raspberryContextImgLeft {
+        width: 350px;
+    }
+    .raspberryContextImgLeft img {
+        width: 350px;
+    }
+    .raspberryContextText {
+        padding: 0 0 0 20px;
+    }
+    
+}
+@media all and (min-width: 1000px) {
+    .raspberryContextImgLeft {
+        width: 400px;
+    }
+    .raspberryContextImgLeft img {
+        width: 400px;
+    }
+    .raspberryContextText {
+        padding: 0 0 0 50px;
+    }
+}
+@media all and (min-width: 1600px) {
+    .raspberryContextImgLeft {
+        width: 500px;
+    }
+    .raspberryContextImgLeft img {
+        width: 500px;
+    }
+    .raspberryContextText {
+        padding: 0 0 0 100px;
+    }
+}
+
+.windowsContainer {
+    margin: 25px;
+}
+.windowsContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.windowsTitle {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.windowsTitle>span:nth-child(1) {
+    vertical-align: middle;
+    transform: scale(1.5);
+}
+.windowsTitle>span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+}
+.windowsContext {
+    align-self: stretch;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.windowsContextText {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: baseline;
+}
+.windowsContextText>button {
+    align-self: flex-start;
+}
+.windowsContextText>p {
+    font-size: 14px;
+    text-align: justify;
+    vertical-align: text-bottom;
+    color: #333;
+}
+
+@media all and (min-width: 700px) {
+    .windowsContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .windowsContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .windowsTitle {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .windowsTitle>span:nth-child(1) {
+        vertical-align: middle;
+        transform: scale(2);
+    }
+    .windowsTitle>span:nth-child(2) {
+        vertical-align: middle;
+        font-size: 36px;
+        color: #333;
+        padding-left: 15px;
+    }
+    .windowsContext {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .windowsContextImgLeft {
+        width: 350px;
+    }
+    .windowsContextImgLeft img {
+        width: 350px;
+    }
+    .windowsContextText {
+        padding: 0 0 0 20px;
+    }
+    
+}
+@media all and (min-width: 1000px) {
+    .windowsContextImgLeft {
+        width: 400px;
+    }
+    .windowsContextImgLeft img {
+        width: 400px;
+    }
+    .windowsContextText {
+        padding: 0 0 0 50px;
+    }
+}
+@media all and (min-width: 1600px) {
+    .windowsContextImgLeft {
+        width: 500px;
+    }
+    .windowsContextImgLeft img {
+        width: 500px;
+    }
+    .windowsContextText {
+        padding: 0 0 0 100px;
+    }
+}

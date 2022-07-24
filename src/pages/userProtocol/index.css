@@ -1,0 +1,24 @@
+.protocolContainer {
+    margin: 25px;
+}
+.protocolContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+@media all and (min-width: 700px) {
+    .protocolContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .protocolContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}

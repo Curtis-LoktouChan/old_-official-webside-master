@@ -1,0 +1,115 @@
+.workContainer {
+    margin: 25px;
+}
+.workContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.workTitle {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.workTitle>span:nth-child(1) {
+    vertical-align: middle;
+    transform: scale(1.5);
+}
+.workTitle>span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+}
+.workContext {
+    width: 100%;
+}
+.workContext {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.workContext>.workCard {
+    width: 280px;
+    text-align: center;
+}
+.workContext>div {
+    margin: 5px 0;
+}
+.workContainer>div>button {
+    align-self: flex-end;
+}
+.workUploadButton {
+    display: none;
+}
+/** 后续优化 */
+/* .notLoggedInWorkContainer>div {
+    background-color: rgb(231, 229, 229);
+    opacity: 0.5;
+} */
+.notLoggedInWorkContext {
+    align-self: center;
+    margin: 15px;
+}
+.notLoggedInWorkContext>a {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.notLoggedInWorkContext>a>span {
+    margin-top: 15px;
+}
+
+@media all and (min-width: 700px) {
+    .workContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .workContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .workTitle {
+        text-align: center;
+        margin: 50px 0 30px 0;
+    }
+    .workTitle>span:nth-child(1) {
+        vertical-align: middle;
+        transform: scale(2);
+    }
+    .workTitle>span:nth-child(2) {
+        vertical-align: middle;
+        font-size: 36px;
+        color: #333;
+        padding-left: 15px;
+    }
+    .workContext {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .workContext>.workCard {
+        width: 250px;
+        height: 250px;
+    }
+    .workContext>.workCard>div:last-child {
+        padding: 20px;
+    }
+    .workContainer>div>button {
+        align-self: flex-end;
+        margin: 20px 0;
+    }
+    .workUploadButton {
+        display: block;
+        margin: 20px 0;
+    }
+}

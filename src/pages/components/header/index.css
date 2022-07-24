@@ -1,0 +1,113 @@
+.headerContainer {
+    font-size: 1.25rem;
+    background-color: #fff;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.navigationBar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin-bottom: 1.5625rem;
+}
+.navigationBar> * {
+    flex: 1 100%;
+}
+.navigationBarFirst {
+    flex: 1 0;
+    order: 1;
+}
+.navigationBarSecond {
+    order: 3;
+}
+.navigationBarThird {
+    flex: 1 0;
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.navigationBarThird>div {
+    color: #1890ff;
+    padding: 6px;
+    border-bottom: 1px solid #333;
+}
+.navigationBarSecond {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.navigationBarSecond>a {
+    border-bottom: 1px solid rgb(219, 177, 177);
+    padding: .3125rem;
+}
+.loggedInDropdown {
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    line-height: 100%;
+    align-items: center;
+}
+.loggedInDropdown:hover {
+    cursor: pointer;
+}
+.loggedInDropdown>span {
+    color: #1890ff;
+    padding: 0 5px;
+}
+.loginDropdown {
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.loginDropdown:hover {
+    cursor: pointer;
+}
+@media all and (min-width: 700px) {     
+    .navigationBar {
+        width: 68.75%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navigationBarFirst {
+        flex: 1 0;
+        order: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .navigationBarSecond {
+        height: 100%;
+        order: 2;
+        flex: 8 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigationBarSecond>a {
+        padding: 0;
+        border: 0;
+    }
+    .navigationBarSecond>a>button>span {
+        font-size: 1.25rem;
+        color: #333;
+    }
+    .navigationBarThird {
+        height: 100%;
+        flex: 1 0 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigationBarThird>div {
+        border: 0;
+        color: #333;
+    }
+}

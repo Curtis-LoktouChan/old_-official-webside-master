@@ -1,0 +1,92 @@
+.hardwareContainer {
+    margin: 25px;
+}
+.hardwareContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.hardwareTitle {
+    text-align: center;
+    margin-bottom: 5px;
+}
+.hardwareTitle>span:nth-child(1) {
+    vertical-align: middle;
+    transform: scale(1.5);
+}
+.hardwareTitle>span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+}
+.hardwareContext {
+    width: 100%;
+}
+.hardwareContext {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.hardwareContext>.hardwareCard {
+    width: 280px;
+    text-align: center;
+}
+.hardwareContext>.hardwareCard:nth-child(3):first-child {
+    height: 250px;
+}
+.hardwareContext>div {
+    margin: 5px 0;
+}
+.hardwareContainer>div>button {
+    align-self: flex-end;
+}
+
+@media all and (min-width: 700px) {
+    .hardwareContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .hardwareContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .hardwareTitle {
+        text-align: center;
+        margin: 50px 0 30px 0;
+    }
+    .hardwareTitle>span:nth-child(1) {
+        vertical-align: middle;
+        transform: scale(2);
+    }
+    .hardwareTitle>span:nth-child(2) {
+        vertical-align: middle;
+        font-size: 36px;
+        color: #333;
+        padding-left: 15px;
+    }
+    .hardwareContext {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .hardwareContext>.hardwareCard>div:first-child {
+        width: 250px;
+        height: 250px;
+    }
+    .hardwareContext>.hardwareCard>div:last-child {
+        padding: 20px;
+    }
+    .hardwareContainer>div>button {
+        margin: 20px 0;
+    }
+}

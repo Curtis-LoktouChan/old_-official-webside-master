@@ -1,0 +1,92 @@
+.courseContainer {
+    margin: 25px;
+}
+.courseContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.courseTitle {
+    text-align: center;
+}
+.courseTitle>span:nth-child(1) {
+    vertical-align: middle;
+    transform: scale(1.5);
+}
+.courseTitle>span:nth-child(2) {
+    vertical-align: middle;
+    font-size: 18px;
+    color: #333;
+    padding-left: 10px;
+}
+.courseContext {
+    width: 100%;
+}
+.courseContext {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.courseContext>.courseCard {
+    width: 280px;
+    text-align: center;
+    font-size: 18px;
+}
+.courseContext>.courseCard .ant-card-meta-title {
+    font-size: 20px;
+}
+.courseContext>div {
+    margin: 5px 0;
+}
+.courseContainer>div>button {
+    align-self: flex-end;
+}
+
+@media all and (min-width: 700px) {
+    .courseContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .courseContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .courseTitle {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .courseTitle>span:nth-child(1) {
+        vertical-align: middle;
+        transform: scale(2);
+    }
+    .courseTitle>span:nth-child(2) {
+        vertical-align: middle;
+        font-size: 36px;
+        color: #333;
+        padding-left: 15px;
+    }
+    .courseContext {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .courseContext>.courseCard {
+        width: 300px;
+    }
+    .courseContext>.courseCard>div:last-child {
+        padding: 30px;
+    }
+    .courseContainer>div>button {
+        align-self: flex-end;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,44 @@
+.userInfoContainer {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.userInfoContainer>div {
+    width: 68.75%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.userInfoContext {
+    margin: 0 25px;
+}
+@media all and (min-width: 700px) {
+    .userInfoContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .userInfoContext {
+        height: 500px;
+        background-color: #b4d2ee;
+        border-radius: 5%;
+        margin: 0 25px;
+    }
+    .userInfoContext>div {
+        margin: 0 50px;
+    }
+    .changeInfo {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .changeInfo>button {
+        margin: 5px;
+    }
+}

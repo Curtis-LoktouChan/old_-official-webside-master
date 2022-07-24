@@ -1,0 +1,24 @@
+.connectContainer {
+    margin: 25px;
+}
+.connectContainer>div {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+@media all and (min-width: 700px) {
+    .connectContainer {
+        width: 100%;
+        margin: 25px 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .connectContainer>div {
+        width: 68.75%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
